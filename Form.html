@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Form Designing</title></head>
+    <body>
+        <h2>HTML Forms</h2>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label>
+            <br>
+            <input type="text" id="fname" name="fname" placeholder="Type your name">
+            <br>
+            <label for="lname">Last name:</label>
+            <br>
+            <input type="text" id="lname" name="lname" placeholder="Type your last name">
+            <br>
+            <label for="address">Address:</label>
+            <br>
+            <input type="text" id="address" name="address" placeholder="enter your address">
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" 
+                id="email" 
+                name="email" 
+                placeholder="enter your email"
+            >
+            <br>
+            <label for="subjects">
+                Which Subjects you want to choose?
+            </label>
+            <br>
+            <input type="checkbox" 
+                    id="subjects" 
+                    name="subjects" 
+                    value="BCA">BCA
+            <br>
+            <input type="checkbox" 
+                    id ="subjects" 
+                    name="subjects" 
+                    value="BBA">BBA
+            <br>
+            <label for="qualifications">
+                Qualifications:
+                &nbsp; &nbsp;
+            </label>
+            <select>
+                <option>schooling level</option>
+                <option>+2 Level</option>
+                <option>Bachelor degree</option>
+            </select>
+            <br>
+            <br>
+            <label for="password">Type your code</label>
+            <input type="password"
+                    id="password"
+                    name="password"
+                    maxlength="4">
+            <br><br>
+            <input type="submit" 
+                    value="Click me to submit">
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="Reset"
+                    value="clear">
+
+        </form>
+    </body>
+</html>

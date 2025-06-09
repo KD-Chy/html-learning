@@ -1,66 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head><title>Form Designing</title></head>
-    <body>
-        <h2>HTML Forms</h2>
-        <form action="/action_page.php">
-            <label for="fname">First name:</label>
-            <br>
-            <input type="text" id="fname" name="fname" placeholder="Type your name">
-            <br>
-            <label for="lname">Last name:</label>
-            <br>
-            <input type="text" id="lname" name="lname" placeholder="Type your last name">
-            <br>
-            <label for="address">Address:</label>
-            <br>
-            <input type="text" id="address" name="address" placeholder="enter your address">
-            <br>
-            <label for="email">Email:</label>
-            <br>
-            <input type="email" 
-                id="email" 
-                name="email" 
-                placeholder="enter your email"
-            >
-            <br>
-            <label for="subjects">
-                Which Subjects you want to choose?
-            </label>
-            <br>
-            <input type="checkbox" 
-                    id="subjects" 
-                    name="subjects" 
-                    value="BCA">BCA
-            <br>
-            <input type="checkbox" 
-                    id ="subjects" 
-                    name="subjects" 
-                    value="BBA">BBA
-            <br>
-            <label for="qualifications">
-                Qualifications:
-                &nbsp; &nbsp;
-            </label>
-            <select>
-                <option>schooling level</option>
-                <option>+2 Level</option>
-                <option>Bachelor degree</option>
-            </select>
-            <br>
-            <br>
-            <label for="password">Type your code</label>
-            <input type="password"
-                    id="password"
-                    name="password"
-                    maxlength="4">
-            <br><br>
-            <input type="submit" 
-                    value="Click me to submit">
-                    &nbsp; &nbsp; &nbsp; &nbsp;
-            <input type="Reset"
-                    value="clear">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Designing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Student Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Type your first name" required>
 
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Type your last name" required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label>Which Subjects do you want to choose?</label>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="subjects" value="BCA"> BCA
+                </label>
+                <label>
+                    <input type="checkbox" name="subjects" value="BBA"> BBA
+                </label>
+            </div>
+
+            <label for="qualifications">Qualifications</label>
+            <select id="qualifications" name="qualifications" required>
+                <option value="">Select qualification</option>
+                <option value="schooling">Schooling Level</option>
+                <option value="plus2">+2 Level</option>
+                <option value="bachelor">Bachelor Degree</option>
+            </select>
+
+            <label for="password">Type your code</label>
+            <input type="password" id="password" name="password" maxlength="4" placeholder="4-digit code" required>
+
+            <div class="form-actions">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </div>
         </form>
-    </body>
+    </div>
+    <script src="Form.js"></script>
+</body>
 </html>
